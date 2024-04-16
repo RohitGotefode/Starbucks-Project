@@ -1,0 +1,2751 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <activity_stages>{"subflows":[],"stages":{},"activities":{},"ends":["1ae9f73393998210e4631aebb9373caf"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Legacy">007c2f021b020100adca1e094f0713b4</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>The default workflow associated with each newly created SLA</description>
+        <expected_sequences>d2e9f73393998210e4631aebb9373caa,cee9f73393998210e4631aebb9373c56,0ee9f73393998210e4631aebb9373c59,82e9f73393998210e4631aebb9373c54,0ee9f73393998210e4631aebb9373c52,1ae9f73393998210e4631aebb9373caf</expected_sequences>
+        <expected_time>1970-01-03 00:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>d2e9f73393998210e4631aebb9373caa,cee9f73393998210e4631aebb9373c56,0ee9f73393998210e4631aebb9373c59,96e9f73393998210e4631aebb9373cae,82e9f73393998210e4631aebb9373c54,52e9f73393998210e4631aebb9373ca9,d2e9f73393998210e4631aebb9373cad,82e9f73393998210e4631aebb9373ca7,0ee9f73393998210e4631aebb9373c52,5ee9f73393998210e4631aebb9373caa,12e9f73393998210e4631aebb9373cac,1ae9f73393998210e4631aebb9373caf,8ee9f73393998210e4631aebb9373ca7</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Starbucks SLA Workflow</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">d2e9f73393998210e4631aebb9373caa</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373c51</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-15 05:46:11</sys_updated_on>
+        <table>task_sla</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Starbucks SLA Workflow">bc139456939dca10e4631aebb9373c3e</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>The default workflow associated with each newly created SLA</description>
+        <name>Starbucks SLA Workflow</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-03 08:55:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc139456939dca10e4631aebb9373c3e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Starbucks SLA Workflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Starbucks Management" source="x_964299_starbucks">ca63e05893d44210e4631aebb9373c5c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Starbucks Management">ca63e05893d44210e4631aebb9373c5c</sys_scope>
+        <sys_update_name>wf_workflow_bc139456939dca10e4631aebb9373c3e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 14:53:24</sys_updated_on>
+        <table>task_sla</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>d2e9f73393998210e4631aebb9373caa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>6</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d2e9f73393998210e4631aebb9373caa"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">d2e9f73393998210e4631aebb9373caa</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>96e9f73393998210e4631aebb9373caa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373caf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>1454</x>
+        <y>601</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1ae9f73393998210e4631aebb9373caf"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notify assignee</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>12e9f73393998210e4631aebb9373cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>633</x>
+        <y>282</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=12e9f73393998210e4631aebb9373cac"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>12e9f73393998210e4631aebb9373cac</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>12e9f73393998210e4631aebb9373cac</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>56e9f73393998210e4631aebb9373cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return current.task.assigned_to + "";&#13;
+}());&#13;
+</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>12e9f73393998210e4631aebb9373cac</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>92e9f73393998210e4631aebb9373cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>c301268ed7a2220035ae23c7ce6103db</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>12e9f73393998210e4631aebb9373cac</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>92e9f73393998210e4631aebb9373cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>c301268ed7a2220035ae23c7ce6103db</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>12e9f73393998210e4631aebb9373cac</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>56e9f73393998210e4631aebb9373cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return current.task.assigned_to + "";&#13;
+}());&#13;
+</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>12e9f73393998210e4631aebb9373cac</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notify assignee">12e9f73393998210e4631aebb9373cac</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ee9f73393998210e4631aebb9373cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notify assignee</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>52e9f73393998210e4631aebb9373ca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>244</x>
+        <y>290</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=52e9f73393998210e4631aebb9373ca9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>52e9f73393998210e4631aebb9373ca9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ae9f73393998210e4631aebb9373ca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>52e9f73393998210e4631aebb9373ca9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>96e9f73393998210e4631aebb9373ca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return current.task.assigned_to + "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>52e9f73393998210e4631aebb9373ca9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>d2e9f73393998210e4631aebb9373ca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>c301268ed7a2220035ae23c7ce6103db</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>52e9f73393998210e4631aebb9373ca9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>d2e9f73393998210e4631aebb9373ca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>c301268ed7a2220035ae23c7ce6103db</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>52e9f73393998210e4631aebb9373ca9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>96e9f73393998210e4631aebb9373ca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return current.task.assigned_to + "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>52e9f73393998210e4631aebb9373ca9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ae9f73393998210e4631aebb9373ca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notify assignee">52e9f73393998210e4631aebb9373ca9</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ee9f73393998210e4631aebb9373ca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notify assignee</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ee9f73393998210e4631aebb9373ca7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>1130</x>
+        <y>272</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=8ee9f73393998210e4631aebb9373ca7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8ee9f73393998210e4631aebb9373ca7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>12e9f73393998210e4631aebb9373ca8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>d311a68ed7a2220035ae23c7ce61032e</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8ee9f73393998210e4631aebb9373ca7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>96e9f73393998210e4631aebb9373ca8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8ee9f73393998210e4631aebb9373ca7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>d2e9f73393998210e4631aebb9373ca8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return current.task.assigned_to + "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8ee9f73393998210e4631aebb9373ca7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>12e9f73393998210e4631aebb9373ca8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>d311a68ed7a2220035ae23c7ce61032e</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8ee9f73393998210e4631aebb9373ca7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>d2e9f73393998210e4631aebb9373ca8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return current.task.assigned_to + "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8ee9f73393998210e4631aebb9373ca7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>96e9f73393998210e4631aebb9373ca8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notify assignee">8ee9f73393998210e4631aebb9373ca7</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>9ae9f73393998210e4631aebb9373ca8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notify assignee's manager</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ee9f73393998210e4631aebb9373caa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>790</x>
+        <y>392</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5ee9f73393998210e4631aebb9373caa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5ee9f73393998210e4631aebb9373caa</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>56e9f73393998210e4631aebb9373cab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5ee9f73393998210e4631aebb9373caa</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>92e9f73393998210e4631aebb9373cab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	if (current.task.assigned_to != current.task.assigned_to.manager)&#13;
+		return current.task.assigned_to.manager + "";&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5ee9f73393998210e4631aebb9373caa</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dee9f73393998210e4631aebb9373caa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>c301268ed7a2220035ae23c7ce6103db</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5ee9f73393998210e4631aebb9373caa</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dee9f73393998210e4631aebb9373caa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>c301268ed7a2220035ae23c7ce6103db</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5ee9f73393998210e4631aebb9373caa</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>92e9f73393998210e4631aebb9373cab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	if (current.task.assigned_to != current.task.assigned_to.manager)&#13;
+		return current.task.assigned_to.manager + "";&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5ee9f73393998210e4631aebb9373caa</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>56e9f73393998210e4631aebb9373cab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notify assignee's manager">5ee9f73393998210e4631aebb9373caa</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ae9f73393998210e4631aebb9373cab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notify assignee's manager</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>96e9f73393998210e4631aebb9373cae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>1286</x>
+        <y>387</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=96e9f73393998210e4631aebb9373cae"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>96e9f73393998210e4631aebb9373cae</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373cae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>d311a68ed7a2220035ae23c7ce61032e</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>96e9f73393998210e4631aebb9373cae</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>9ee9f73393998210e4631aebb9373cae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>96e9f73393998210e4631aebb9373cae</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dae9f73393998210e4631aebb9373cae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	if (current.task.assigned_to != current.task.assigned_to.manager)&#13;
+		return current.task.assigned_to.manager + "";&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>96e9f73393998210e4631aebb9373cae</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373cae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>d311a68ed7a2220035ae23c7ce61032e</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>96e9f73393998210e4631aebb9373cae</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dae9f73393998210e4631aebb9373cae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	if (current.task.assigned_to != current.task.assigned_to.manager)&#13;
+		return current.task.assigned_to.manager + "";&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>96e9f73393998210e4631aebb9373cae</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>9ee9f73393998210e4631aebb9373cae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notify assignee's manager">96e9f73393998210e4631aebb9373cae</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>92e9f73393998210e4631aebb9373caf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notify CI Supported By</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>d2e9f73393998210e4631aebb9373cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>349</x>
+        <y>401</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d2e9f73393998210e4631aebb9373cad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d2e9f73393998210e4631aebb9373cad</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	if (current.task.assigned_to != current.task.cmdb_ci.supported_by)&#13;
+		if (current.task.priority == 1 || current.task.priority == 2 )&#13;
+			return current.task.cmdb_ci.supported_by + "";&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d2e9f73393998210e4631aebb9373cad</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>56e9f73393998210e4631aebb9373cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>05c058fcc3122200b6dcdfdc64d3aeed</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d2e9f73393998210e4631aebb9373cad</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dae9f73393998210e4631aebb9373cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d2e9f73393998210e4631aebb9373cad</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>56e9f73393998210e4631aebb9373cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>05c058fcc3122200b6dcdfdc64d3aeed</value>
+        <variable display_value="Event name">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d2e9f73393998210e4631aebb9373cad</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	if (current.task.assigned_to != current.task.cmdb_ci.supported_by)&#13;
+		if (current.task.priority == 1 || current.task.priority == 2 )&#13;
+			return current.task.cmdb_ci.supported_by + "";&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 1">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d2e9f73393998210e4631aebb9373cad</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dae9f73393998210e4631aebb9373cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="Parameter 2">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notify CI Supported By">d2e9f73393998210e4631aebb9373cad</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dee9f73393998210e4631aebb9373cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>SLA has breached</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ee9f73393998210e4631aebb9373c52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>961</x>
+        <y>148</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0ee9f73393998210e4631aebb9373c52"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c52</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="Condition script">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c52</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>has_breached=true^EQ</value>
+        <variable display_value="Condition">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c52</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>has_breached=true^EQ</value>
+        <variable display_value="Condition">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c52</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="Condition script">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="SLA has breached">0ee9f73393998210e4631aebb9373c52</activity>
+        <condition/>
+        <condition_default/>
+        <condition_type>else_flag</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Normal</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ae9f73393998210e4631aebb9373c53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="SLA has breached">0ee9f73393998210e4631aebb9373c52</activity>
+        <condition>workflow.scratchpad.repairMode === 'true'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Repair</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373c53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="SLA Percentage Timer">8e291a23ac1464262f4366bb3182d840</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait 25 percent of SLA duration</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>82e9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>471</x>
+        <y>94</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=82e9f73393998210e4631aebb9373c54"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Modifier">d7277ef40a0a0b5f00355fe11ecee145</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order>90</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>06e9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>property</value>
+        <variable display_value="Run during upgrade">f7fc531e77021110f5bf23e2fa5a99a7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ee9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer type">d67e76010a0a0b9b01146faa9f93fd86</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ae9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule field">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ee9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer field">d67ff5da0a0a0b9b00b230016b2f5203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>82e9f73393998210e4631aebb9373c56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone type">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>86e9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="User Specified Timezone">60eadd8b73270010491d235f04f6a76a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ae9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule type">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>25</value>
+        <variable display_value="Percentage">c36369760a0a0ba973b49249d16250b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Relative duration">d7242d200a0a0b5f008f535603a17bc8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>cee9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone field">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Modifier">d7277ef40a0a0b5f00355fe11ecee145</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Relative duration">d7242d200a0a0b5f008f535603a17bc8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ae9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule type">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>82e9f73393998210e4631aebb9373c56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone type">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ee9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer field">d67ff5da0a0a0b9b00b230016b2f5203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ae9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule field">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ee9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer type">d67e76010a0a0b9b01146faa9f93fd86</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>cee9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone field">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>25</value>
+        <variable display_value="Percentage">c36369760a0a0ba973b49249d16250b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order>90</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>06e9f73393998210e4631aebb9373c54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>property</value>
+        <variable display_value="Run during upgrade">f7fc531e77021110f5bf23e2fa5a99a7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>82e9f73393998210e4631aebb9373c54</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>86e9f73393998210e4631aebb9373c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="User Specified Timezone">60eadd8b73270010491d235f04f6a76a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</activity>
+        <condition>activity.result != 'repair'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Normal</name>
+        <order>200</order>
+        <short_description>The SLA is running normally (not being repaired)</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>86e9f73393998210e4631aebb9373c56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</activity>
+        <condition>activity.result == 'repair'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Repair</name>
+        <order>100</order>
+        <short_description>The SLA is being repaired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ae9f73393998210e4631aebb9373c56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="SLA Percentage Timer">8e291a23ac1464262f4366bb3182d840</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait 50% percent of SLA duration</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ee9f73393998210e4631aebb9373c59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>191</x>
+        <y>44</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0ee9f73393998210e4631aebb9373c59"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="User Specified Timezone">60eadd8b73270010491d235f04f6a76a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>06e9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule type">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ee9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone type">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>42e9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Relative duration">d7242d200a0a0b5f008f535603a17bc8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ae9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone field">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ee9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>50</value>
+        <variable display_value="Percentage">c36369760a0a0ba973b49249d16250b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>86e9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer type">d67e76010a0a0b9b01146faa9f93fd86</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ae9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Modifier">d7277ef40a0a0b5f00355fe11ecee145</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order>90</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ee9f73393998210e4631aebb9373c59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>property</value>
+        <variable display_value="Run during upgrade">f7fc531e77021110f5bf23e2fa5a99a7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule field">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer field">d67ff5da0a0a0b9b00b230016b2f5203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer field">d67ff5da0a0a0b9b00b230016b2f5203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>06e9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule type">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ee9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone type">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>42e9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Relative duration">d7242d200a0a0b5f008f535603a17bc8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ae9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone field">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule field">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>86e9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer type">d67e76010a0a0b9b01146faa9f93fd86</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ae9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Modifier">d7277ef40a0a0b5f00355fe11ecee145</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ee9f73393998210e4631aebb9373c5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>50</value>
+        <variable display_value="Percentage">c36369760a0a0ba973b49249d16250b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order>90</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ee9f73393998210e4631aebb9373c59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>property</value>
+        <variable display_value="Run during upgrade">f7fc531e77021110f5bf23e2fa5a99a7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0ee9f73393998210e4631aebb9373c59</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="User Specified Timezone">60eadd8b73270010491d235f04f6a76a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait 50% percent of SLA duration">0ee9f73393998210e4631aebb9373c59</activity>
+        <condition>activity.result != 'repair'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Normal</name>
+        <order>200</order>
+        <short_description>The SLA is running normally (not being repaired)</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>82e9f73393998210e4631aebb9373c5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait 50% percent of SLA duration">0ee9f73393998210e4631aebb9373c59</activity>
+        <condition>activity.result == 'repair'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Repair</name>
+        <order>100</order>
+        <short_description>The SLA is being repaired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="SLA Percentage Timer">8e291a23ac1464262f4366bb3182d840</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait 75% percent of SLA duration</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>cee9f73393998210e4631aebb9373c56</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:37:42</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>4</x>
+        <y>149</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=cee9f73393998210e4631aebb9373c56"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:37:42</sys_updated_on>
+        <value>75</value>
+        <variable display_value="Percentage">c36369760a0a0ba973b49249d16250b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>06e9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Relative duration">d7242d200a0a0b5f008f535603a17bc8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ee9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone field">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order>90</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>42e9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>property</value>
+        <variable display_value="Run during upgrade">f7fc531e77021110f5bf23e2fa5a99a7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ae9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer type">d67e76010a0a0b9b01146faa9f93fd86</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ee9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Modifier">d7277ef40a0a0b5f00355fe11ecee145</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>86e9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule field">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ae9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer field">d67ff5da0a0a0b9b00b230016b2f5203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="User Specified Timezone">60eadd8b73270010491d235f04f6a76a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule type">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>cee9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone type">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>cee9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone type">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule type">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>8ae9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer field">d67ff5da0a0a0b9b00b230016b2f5203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>86e9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Schedule field">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ee9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Modifier">d7277ef40a0a0b5f00355fe11ecee145</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ae9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timer type">d67e76010a0a0b9b01146faa9f93fd86</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>0ee9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Timezone field">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order/>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>06e9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="Relative duration">d7242d200a0a0b5f008f535603a17bc8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>02e9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:37:42</sys_updated_on>
+        <value>75</value>
+        <variable display_value="Percentage">c36369760a0a0ba973b49249d16250b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order>90</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>42e9f73393998210e4631aebb9373c57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value>property</value>
+        <variable display_value="Run during upgrade">f7fc531e77021110f5bf23e2fa5a99a7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cee9f73393998210e4631aebb9373c56</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <value/>
+        <variable display_value="User Specified Timezone">60eadd8b73270010491d235f04f6a76a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait 75% percent of SLA duration">cee9f73393998210e4631aebb9373c56</activity>
+        <condition>activity.result != 'repair'</condition>
+        <condition_default display_value="Normal">296cb730373331003e7d40ed9dbe5d27</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Normal</name>
+        <order>200</order>
+        <short_description>The SLA is running normally (not being repaired)</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>46e9f73393998210e4631aebb9373c59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait 75% percent of SLA duration">cee9f73393998210e4631aebb9373c56</activity>
+        <condition>activity.result == 'repair'</condition>
+        <condition_default display_value="Repair">817cb730373331003e7d40ed9dbe5d14</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Repair</name>
+        <order>100</order>
+        <short_description>The SLA is being repaired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c2e9f73393998210e4631aebb9373c59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Join">7c9a2ba9c0a801650021ada408de0ebd</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Wait for all activities to complete</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>82e9f73393998210e4631aebb9373ca7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+        <x>464</x>
+        <y>546</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=82e9f73393998210e4631aebb9373ca7"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</activity>
+        <condition>activity.result == 'complete'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Complete</name>
+        <order>1</order>
+        <short_description>All predecessor activities have transitioned to this activity</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>c6e9f73393998210e4631aebb9373ca7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</activity>
+        <condition>activity.result == 'incomplete'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Incomplete</name>
+        <order>2</order>
+        <short_description>At least one predecessor activities did not transition to this activity</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>46e9f73393998210e4631aebb9373ca7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">86e9f73393998210e4631aebb9373c56</condition>
+        <from display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>12e9f73393998210e4631aebb9373cb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Notify assignee's manager">5ee9f73393998210e4631aebb9373caa</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">92e9f73393998210e4631aebb9373caf</condition>
+        <from display_value="Notify assignee's manager">96e9f73393998210e4631aebb9373cae</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373cb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">46e9f73393998210e4631aebb9373c59</condition>
+        <from display_value="Wait 75% percent of SLA duration">cee9f73393998210e4631aebb9373c56</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ae9f73393998210e4631aebb9373cc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait 50% percent of SLA duration">0ee9f73393998210e4631aebb9373c59</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">86e9f73393998210e4631aebb9373c56</condition>
+        <from display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>1ee9f73393998210e4631aebb9373cb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Complete">c6e9f73393998210e4631aebb9373ca7</condition>
+        <from display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>52e9f73393998210e4631aebb9373cb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="End">1ae9f73393998210e4631aebb9373caf</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">4ae9f73393998210e4631aebb9373c53</condition>
+        <from display_value="SLA has breached">0ee9f73393998210e4631aebb9373c52</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>52e9f73393998210e4631aebb9373cc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">9ae9f73393998210e4631aebb9373ca8</condition>
+        <from display_value="Notify assignee">8ee9f73393998210e4631aebb9373ca7</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>56e9f73393998210e4631aebb9373cb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Repair">02e9f73393998210e4631aebb9373c5c</condition>
+        <from display_value="Wait 50% percent of SLA duration">0ee9f73393998210e4631aebb9373c59</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ae9f73393998210e4631aebb9373cb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">82e9f73393998210e4631aebb9373c5c</condition>
+        <from display_value="Wait 50% percent of SLA duration">0ee9f73393998210e4631aebb9373c59</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ee9f73393998210e4631aebb9373cb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">4ae9f73393998210e4631aebb9373c53</condition>
+        <from display_value="SLA has breached">0ee9f73393998210e4631aebb9373c52</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ee9f73393998210e4631aebb9373cbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Notify assignee's manager">96e9f73393998210e4631aebb9373cae</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">dee9f73393998210e4631aebb9373cad</condition>
+        <from display_value="Notify CI Supported By">d2e9f73393998210e4631aebb9373cad</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>5ee9f73393998210e4631aebb9373cc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">86e9f73393998210e4631aebb9373c56</condition>
+        <from display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>92e9f73393998210e4631aebb9373cb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Notify assignee">12e9f73393998210e4631aebb9373cac</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">96e9f73393998210e4631aebb9373caa</condition>
+        <from display_value="Begin">d2e9f73393998210e4631aebb9373caa</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>92e9f73393998210e4631aebb9373cb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait 75% percent of SLA duration">cee9f73393998210e4631aebb9373c56</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5ae9f73393998210e4631aebb9373cab</condition>
+        <from display_value="Notify assignee's manager">5ee9f73393998210e4631aebb9373caa</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>96e9f73393998210e4631aebb9373cb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">46e9f73393998210e4631aebb9373c59</condition>
+        <from display_value="Wait 75% percent of SLA duration">cee9f73393998210e4631aebb9373c56</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>96e9f73393998210e4631aebb9373cc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Notify assignee's manager">96e9f73393998210e4631aebb9373cae</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">86e9f73393998210e4631aebb9373c56</condition>
+        <from display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>9ae9f73393998210e4631aebb9373cb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="SLA has breached">0ee9f73393998210e4631aebb9373c52</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Repair">c2e9f73393998210e4631aebb9373c59</condition>
+        <from display_value="Wait 75% percent of SLA duration">cee9f73393998210e4631aebb9373c56</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>9ae9f73393998210e4631aebb9373cc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait 50% percent of SLA duration">0ee9f73393998210e4631aebb9373c59</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Repair">0ae9f73393998210e4631aebb9373c56</condition>
+        <from display_value="Wait 25 percent of SLA duration">82e9f73393998210e4631aebb9373c54</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>9ee9f73393998210e4631aebb9373cb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="SLA has breached">0ee9f73393998210e4631aebb9373c52</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">1ee9f73393998210e4631aebb9373cac</condition>
+        <from display_value="Notify assignee">12e9f73393998210e4631aebb9373cac</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>9ee9f73393998210e4631aebb9373cb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Incomplete">46e9f73393998210e4631aebb9373ca7</condition>
+        <from display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>d2e9f73393998210e4631aebb9373cb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="End">1ae9f73393998210e4631aebb9373caf</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">4ae9f73393998210e4631aebb9373c53</condition>
+        <from display_value="SLA has breached">0ee9f73393998210e4631aebb9373c52</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>d2e9f73393998210e4631aebb9373cc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Notify assignee">8ee9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5ee9f73393998210e4631aebb9373ca9</condition>
+        <from display_value="Notify assignee">52e9f73393998210e4631aebb9373ca9</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dae9f73393998210e4631aebb9373cb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Wait for all activities to complete">82e9f73393998210e4631aebb9373ca7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">82e9f73393998210e4631aebb9373c5c</condition>
+        <from display_value="Wait 50% percent of SLA duration">0ee9f73393998210e4631aebb9373c59</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dae9f73393998210e4631aebb9373cb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Notify assignee">52e9f73393998210e4631aebb9373ca9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Normal">82e9f73393998210e4631aebb9373c5c</condition>
+        <from display_value="Wait 50% percent of SLA duration">0ee9f73393998210e4631aebb9373c59</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dee9f73393998210e4631aebb9373cb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="Notify CI Supported By">d2e9f73393998210e4631aebb9373cad</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Repair">c6e9f73393998210e4631aebb9373c53</condition>
+        <from display_value="SLA has breached">0ee9f73393998210e4631aebb9373c52</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>dee9f73393998210e4631aebb9373cbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <to display_value="End">1ae9f73393998210e4631aebb9373caf</to>
+    </wf_transition>
+    <var_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>SLA Repair Mode</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sla_repair_mode</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>SLA Repair Mode</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model_id>bc139456939dca10e4631aebb9373c3e</model_id>
+        <model_table>wf_workflow</model_table>
+        <name>var__m_var_dictionary_bc139456939dca10e4631aebb9373c3e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>var_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-03 08:55:50</sys_created_on>
+        <sys_id>3c139456939dca10e4631aebb9373cae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SLA Repair Mode</sys_name>
+        <sys_package display_value="Starbucks Management" source="x_964299_starbucks">ca63e05893d44210e4631aebb9373c5c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Starbucks Management">ca63e05893d44210e4631aebb9373c5c</sys_scope>
+        <sys_update_name>var_dictionary_3c139456939dca10e4631aebb9373cae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-03 08:55:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </var_dictionary>
+    <sys_documentation element="sla_repair_mode" language="en" table="var__m_var_dictionary_bc139456939dca10e4631aebb9373c3e">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sla_repair_mode</element>
+            <help/>
+            <hint/>
+            <label>SLA Repair Mode</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_bc139456939dca10e4631aebb9373c3e</name>
+            <plural>SLA Repair Mode</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-03 08:55:50</sys_created_on>
+            <sys_id>f0139456939dca10e4631aebb9373cb3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>SLA Repair Mode</sys_name>
+            <sys_package display_value="Starbucks Management" source="x_964299_starbucks">ca63e05893d44210e4631aebb9373c5c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Starbucks Management">ca63e05893d44210e4631aebb9373c5c</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_bc139456939dca10e4631aebb9373c3e_sla_repair_mode_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-03 08:55:50</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-08 17:35:15</sys_created_on>
+        <sys_id>4ae9f73393998210e4631aebb9373c51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-08 17:35:15</sys_updated_on>
+        <workflow_version display_value="Starbucks SLA Workflow">c6e9f73393998210e4631aebb9373c51</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=bc139456939dca10e4631aebb9373c3e^sys_id!=c6e9f73393998210e4631aebb9373c51">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

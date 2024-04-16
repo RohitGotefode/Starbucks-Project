@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4d8251b593284610e4631aebb9373c02" extends="task" label="Starbucks" max_length="40" name="x_964299_starbucks_starbucks" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:gs.getUserID()" display="true" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="order for" max_length="32" name="order_for" reference="sys_user" reference_qual="roles=starbucks_user^EQ" reference_qual_condition="roles=starbucks_user^EQ" type="reference" use_dynamic_default="true"/>
+    </element>
+</database>
